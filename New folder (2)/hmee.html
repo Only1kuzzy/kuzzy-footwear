@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kuzzyfootwears</title>
+    <link rel="stylesheet" href="me.css">
+    <script src="me.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="shoe/now.jpg" alt="kuzzy Logo" class="logo" sizes="100%">
+        <h1>kuzzyfootwears</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to the Best Footwear Store</h2>
+        <p>Find the latest and most stylish footwear here.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Collection</h2>
+        <div class="product" data-id="1" data-name="Half Shoes" data-price="50">
+            <img src="shoe/3.jpg" alt="Half shoe">
+            <h3>Half shoe</h3>
+            <p>$15</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="2" data-name="chrome palm slide" data-price="40">
+            <img src="shoe/4.jpg" alt=" chrome palm slide">
+            <h3>Chrome palm slide</h3>
+            <p>$15</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="3" data-name="Formal Shoes" data-price="60">
+            <img src="shoe/me.jpg" alt="kuzzy slide">
+            <h3>kuzzy slide</h3>
+            <p>$20</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+    
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button id="checkout">Checkout</button>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about providing the best footwear for every occasion.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@kuzzyfootwears.com</p>
+        <p>Phone: 09072825198</p>
+    </section>
+    
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Footwear Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
